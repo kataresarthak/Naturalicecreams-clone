@@ -1,0 +1,951 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tree To Treat - Naturals Ice Cream</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="text-center py-2" id="warning">
+      *This is only a brand name and does not represent its true nature.
+    </div>
+    <header class="topbar">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-7 d-flex align-items-center gap-4">
+            <a href="index.html"
+              ><img
+                src="images/imgi_1_Logo-with-asterisk-01-1.jpg"
+                class="logo"
+                alt="Naturals"
+            /></a>
+            <a href="#" class="btn order-btn">Order Now</a>
+          </div>
+          <div class="col-md-5 d-flex justify-content-end">
+            <div class="search-wrapper">
+              <input type="text" placeholder="I’m looking for..." />
+              <button>
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-green">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="tree-to-treat.html"
+                >Tree To Treat</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="our-legacy.html">Our Legacy</a>
+            </li>
+            <li class="nav-item dropdown products-dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button"
+                >Products</a
+              >
+              <div class="dropdown-menu products-megamenu">
+                <div class="container">
+                  <div
+                    class="d-flex justify-content-center align-items-start flex-wrap gap-4"
+                  >
+                    <div class="text-center">
+                      <a
+                        href="festive-special.html"
+                        class="product-category-link"
+                      >
+                        <img
+                          src="images/Product/imgi_4_Festive-1.png"
+                          alt="Festive Special"
+                        />
+                        <p>Festive Special</p>
+                      </a>
+                    </div>
+                    <div class="text-center">
+                      <a
+                        href="no-added-sugar.html"
+                        class="product-category-link"
+                      >
+                        <img
+                          src="images/Product/imgi_3_nosuger.png"
+                          alt="No Added Sugar"
+                        />
+                        <p>No Added Sugar</p>
+                      </a>
+                    </div>
+                    <div class="text-center">
+                      <a
+                        href="round-the-year.html"
+                        class="product-category-link"
+                      >
+                        <img
+                          src="images/Product/imgi_2_Year-Round.png"
+                          alt="Round The Year"
+                        />
+                        <p>Round The Year</p>
+                      </a>
+                    </div>
+                    <div class="text-center">
+                      <a href="seasonal.html" class="product-category-link">
+                        <img
+                          src="images/Product/imgi_6_Seasonal-2.png"
+                          alt="Seasonal"
+                        />
+                        <p>Seasonal</p>
+                      </a>
+                    </div>
+                    <div class="text-center">
+                      <a
+                        href="berry-festival.html"
+                        class="product-category-link"
+                      >
+                        <img
+                          src="images/Product/imgi_5_Berry-1.png"
+                          alt="Berry Festival"
+                        />
+                        <p>Berry Festival</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="malai-magic.html">Malai Magic</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="franchise-queries.html"
+                >Franchise Queries</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="store-locator.html">Store Locator</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="malai-hero">
+      <img
+        src="images/malai-magic-hero.jpg"
+        alt="Malai Magic - You can make some great dishes using our Malai Ice Cream"
+        class="w-100"
+      />
+    </section>
+
+    <!-- Recipe Section -->
+    <section class="py-5 position-relative" style="background-color: #f5f5dc">
+      <div class="container malaicontent">
+        <!-- Section Title -->
+        <div class="text-center mb-5">
+          <h2
+            class="section-title mb-3"
+            style="color: #2c3e2c; font-weight: 800; letter-spacing: 2px"
+          >
+            RECIPE WITH MALAI ICE CREAM
+          </h2>
+        </div>
+
+        <!-- Recipe Grid -->
+        <div class="row g-4 position-relative" style="z-index: 2">
+          <!-- Recipe Card 1 -->
+          <div class="col-md-4 col-sm-6">
+            <figure class="product rounded">
+              <div class="product-image p-3">
+                <img
+                  src="images/recipes/Mango Oats Pudding.jpg"
+                  alt="Mango Oats Pudding"
+                  class="w-100"
+                />
+              </div>
+              <figcaption class="text-center">
+                <h6>Mango Oats Pudding</h6>
+                <button class="btn btn-success product-btn text-white">
+                  Get Recipe
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Recipe Card 2 -->
+          <div class="col-md-4 col-sm-6">
+            <figure class="product rounded">
+              <div class="product-image p-3">
+                <img
+                  src="images/recipes/bread-malai-roll.jpg"
+                  alt="Bread Malai Roll"
+                  class="w-100"
+                />
+              </div>
+              <figcaption class="text-center">
+                <h6>Bread Malai Roll</h6>
+                <button class="btn btn-success product-btn text-white">
+                  Get Recipe
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Recipe Card 3 -->
+          <div class="col-md-4 col-sm-6">
+            <figure class="product rounded">
+              <div class="product-image p-3">
+                <img
+                  src="images/recipes/mango-milk-pudding-bites.jpg"
+                  alt="Mango Milk Pudding Bites"
+                  class="w-100"
+                />
+              </div>
+              <figcaption class="text-center">
+                <h6>Mango Milk Pudding Bites</h6>
+                <button class="btn btn-success product-btn text-white">
+                  Get Recipe
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Recipe Card 4 -->
+          <div class="col-md-4 col-sm-6">
+            <figure class="product rounded">
+              <div class="product-image p-3">
+                <img
+                  src="images/recipes/mango-bombolonis.jpg"
+                  alt="Mango Bombolonis"
+                  class="w-100"
+                />
+              </div>
+              <figcaption class="text-center">
+                <h6>Mango Bombolonis</h6>
+                <button class="btn btn-success product-btn text-white">
+                  Get Recipe
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Recipe Card 5 -->
+          <div class="col-md-4 col-sm-6">
+            <figure class="product rounded">
+              <div class="product-image p-3">
+                <img
+                  src="images/recipes/mango-barfi.jpg"
+                  alt="Mango Barfi"
+                  class="w-100"
+                />
+              </div>
+              <figcaption class="text-center">
+                <h6>Mango Barfi</h6>
+                <button class="btn btn-success product-btn text-white">
+                  Get Recipe
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Recipe Card 6 -->
+          <div class="col-md-4 col-sm-6">
+            <figure class="product rounded">
+              <div class="product-image p-3">
+                <img
+                  src="images/recipes/muskmelon-shake.jpg"
+                  alt="Muskmelon Shake"
+                  class="w-100"
+                />
+              </div>
+              <figcaption class="text-center">
+                <h6>Muskmelon Shake</h6>
+                <button class="btn btn-success product-btn text-white">
+                  Get Recipe
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Recipe Card 7 -->
+          <div class="col-md-4 col-sm-6">
+            <figure class="product rounded">
+              <div class="product-image p-3">
+                <img
+                  src="images/recipes/mango-shahi-tukda.jpg"
+                  alt="Mango Shahi Tukda"
+                  class="w-100"
+                />
+              </div>
+              <figcaption class="text-center">
+                <h6>Mango Shahi Tukda</h6>
+                <button class="btn btn-success product-btn text-white">
+                  Get Recipe
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Recipe Card 8 -->
+          <div class="col-md-4 col-sm-6">
+            <figure class="product rounded">
+              <div class="product-image p-3">
+                <img
+                  src="images/recipes/mango-panna-cotta.jpg"
+                  alt="Mango Panna Cotta"
+                  class="w-100"
+                />
+              </div>
+              <figcaption class="text-center">
+                <h6>Mango Panna Cotta</h6>
+                <button class="btn btn-success product-btn text-white">
+                  Get Recipe
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Recipe Card 9 -->
+          <div class="col-md-4 col-sm-6">
+            <figure class="product rounded">
+              <div class="product-image p-3">
+                <img
+                  src="images/recipes/strawberry-sago-delight.jpg"
+                  alt="Strawberry Sago Delight"
+                  class="w-100"
+                />
+              </div>
+              <figcaption class="text-center">
+                <h6>Strawberry Sago Delight</h6>
+                <button class="btn btn-success product-btn text-white">
+                  Get Recipe
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Recipe Card 10 -->
+          <div class="col-md-4 col-sm-6">
+            <figure class="product rounded">
+              <div class="product-image p-3">
+                <img
+                  src="images/recipes/matcha-malai-float.jpg"
+                  alt="Matcha Malai Float"
+                  class="w-100"
+                />
+              </div>
+              <figcaption class="text-center">
+                <h6>Matcha Malai Float</h6>
+                <button class="btn btn-success product-btn text-white">
+                  Get Recipe
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Recipe Card 11 -->
+          <div class="col-md-4 col-sm-6">
+            <figure class="product rounded">
+              <div class="product-image p-3">
+                <img
+                  src="images/recipes/instant-malai-cake.jpg"
+                  alt="Instant Malai Cake"
+                  class="w-100"
+                />
+              </div>
+              <figcaption class="text-center">
+                <h6>Instant Malai Cake</h6>
+                <button class="btn btn-success product-btn text-white">
+                  Get Recipe
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Recipe Card 12 -->
+          <div class="col-md-4 col-sm-6">
+            <figure class="product rounded">
+              <div class="product-image p-3">
+                <img
+                  src="images/recipes/strawberry-pudding.jpg"
+                  alt="Strawberry Pudding"
+                  class="w-100"
+                />
+              </div>
+              <figcaption class="text-center">
+                <h6>Strawberry Pudding</h6>
+                <button class="btn btn-success product-btn text-white">
+                  Get Recipe
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Recipe Card 13 -->
+          <div class="col-md-4 col-sm-6">
+            <figure class="product rounded">
+              <div class="product-image p-3">
+                <img
+                  src="images/recipes/saffron-tres-leches.jpg"
+                  alt="Saffron Tres Leches"
+                  class="w-100"
+                />
+              </div>
+              <figcaption class="text-center">
+                <h6>Saffron Tres Leches</h6>
+                <button class="btn btn-success product-btn text-white">
+                  Get Recipe
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Recipe Card 14 -->
+          <div class="col-md-4 col-sm-6">
+            <figure class="product rounded">
+              <div class="product-image p-3">
+                <img
+                  src="images/recipes/eggless-strawberry-cream-cheesecake-toast.jpg"
+                  alt="Eggless Strawberry Cream Cheesecake Toast"
+                  class="w-100"
+                />
+              </div>
+              <figcaption class="text-center">
+                <h6>Eggless strawberry cream cheesecake toast</h6>
+                <button class="btn btn-success product-btn text-white">
+                  Get Recipe
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Recipe Card 15 -->
+          <div class="col-md-4 col-sm-6">
+            <figure class="product rounded">
+              <div class="product-image p-3">
+                <img
+                  src="images/recipes/carrot-cake.jpg"
+                  alt="Carrot Cake"
+                  class="w-100"
+                />
+              </div>
+              <figcaption class="text-center">
+                <h6>Carrot Cake</h6>
+                <button class="btn btn-success product-btn text-white">
+                  Get Recipe
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Recipe Card 16 -->
+          <div class="col-md-4 col-sm-6">
+            <figure class="product rounded">
+              <div class="product-image p-3">
+                <img
+                  src="images/recipes/snowball-truffles.jpg"
+                  alt="Snowball Truffles"
+                  class="w-100"
+                />
+              </div>
+              <figcaption class="text-center">
+                <h6>Snowball Truffles</h6>
+                <button class="btn btn-success product-btn text-white">
+                  Get Recipe
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Recipe Card 17 -->
+          <div class="col-md-4 col-sm-6">
+            <figure class="product rounded">
+              <div class="product-image p-3">
+                <img
+                  src="images/recipes/hot-fudge-cake.jpg"
+                  alt="Hot Fudge Cake"
+                  class="w-100"
+                />
+              </div>
+              <figcaption class="text-center">
+                <h6>Hot Fudge Cake</h6>
+                <button class="btn btn-success product-btn text-white">
+                  Get Recipe
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Recipe Card 18 -->
+          <div class="col-md-4 col-sm-6">
+            <figure class="product rounded">
+              <div class="product-image p-3">
+                <img
+                  src="images/recipes/italian-hot-chocolate.jpg"
+                  alt="Italian Hot Chocolate"
+                  class="w-100"
+                />
+              </div>
+              <figcaption class="text-center">
+                <h6>Italian Hot Chocolate</h6>
+                <button class="btn btn-success product-btn text-white">
+                  Get Recipe
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Recipe Card 19 -->
+          <div class="col-md-4 col-sm-6">
+            <figure class="product rounded">
+              <div class="product-image p-3">
+                <img
+                  src="images/recipes/turkish-pistachio-dessert-box.jpg"
+                  alt="Turkish Pistachio Dessert Box"
+                  class="w-100"
+                />
+              </div>
+              <figcaption class="text-center">
+                <h6>Turkish Pistachio Dessert Box</h6>
+                <button class="btn btn-success product-btn text-white">
+                  Get Recipe
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Recipe Card 20 -->
+          <div class="col-md-4 col-sm-6">
+            <figure class="product rounded">
+              <div class="product-image p-3">
+                <img
+                  src="images/recipes/chocolate-pinecones.jpg"
+                  alt="Chocolate Pinecones"
+                  class="w-100"
+                />
+              </div>
+              <figcaption class="text-center">
+                <h6>Chocolate Pinecones</h6>
+                <button class="btn btn-success product-btn text-white">
+                  Get Recipe
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Recipe Card 21 -->
+          <div class="col-md-4 col-sm-6">
+            <figure class="product rounded">
+              <div class="product-image p-3">
+                <img
+                  src="images/recipes/bounty-bars.jpg"
+                  alt="Bounty Bars"
+                  class="w-100"
+                />
+              </div>
+              <figcaption class="text-center">
+                <h6>Bounty Bars</h6>
+                <button class="btn btn-success product-btn text-white">
+                  Get Recipe
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Recipe Card 22 -->
+          <div class="col-md-4 col-sm-6">
+            <figure class="product rounded">
+              <div class="product-image p-3">
+                <img
+                  src="images/recipes/paan-falooda-shots.jpg"
+                  alt="Paan Falooda Shots"
+                  class="w-100"
+                />
+              </div>
+              <figcaption class="text-center">
+                <h6>Paan Falooda Shots</h6>
+                <button class="btn btn-success product-btn text-white">
+                  Get Recipe
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Recipe Card 23 -->
+          <div class="col-md-4 col-sm-6">
+            <figure class="product rounded">
+              <div class="product-image p-3">
+                <img
+                  src="images/recipes/rasmalai-tiramisu.jpg"
+                  alt="Rasmalai Tiramisu"
+                  class="w-100"
+                />
+              </div>
+              <figcaption class="text-center">
+                <h6>Rasmalai Tiramisu</h6>
+                <button class="btn btn-success product-btn text-white">
+                  Get Recipe
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Recipe Card 24 -->
+          <div class="col-md-4 col-sm-6">
+            <figure class="product rounded">
+              <div class="product-image p-3">
+                <img
+                  src="images/recipes/kunafa-rabdi-cups.jpg"
+                  alt="Kunafa Rabdi Cups"
+                  class="w-100"
+                />
+              </div>
+              <figcaption class="text-center">
+                <h6>Kunafa Rabdi Cups</h6>
+                <button class="btn btn-success product-btn text-white">
+                  Get Recipe
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Recipe Card 25 -->
+          <div class="col-md-4 col-sm-6">
+            <figure class="product rounded">
+              <div class="product-image p-3">
+                <img
+                  src="images/recipes/mangalorean-gadbad-ice-cream.jpg"
+                  alt="Mangalorean Gadbad Ice cream"
+                  class="w-100"
+                />
+              </div>
+              <figcaption class="text-center">
+                <h6>Mangalorean Gadbad Ice cream</h6>
+                <button class="btn btn-success product-btn text-white">
+                  Get Recipe
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Recipe Card 26 -->
+          <div class="col-md-4 col-sm-6">
+            <figure class="product rounded">
+              <div class="product-image p-3">
+                <img
+                  src="images/recipes/sabudana-kheer.png"
+                  alt="Sabudana Kheer"
+                  class="w-100"
+                />
+              </div>
+              <figcaption class="text-center">
+                <h6>Sabudana Kheer</h6>
+                <button class="btn btn-success product-btn text-white">
+                  Get Recipe
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Recipe Card 27 -->
+          <div class="col-md-4 col-sm-6">
+            <figure class="product rounded">
+              <div class="product-image p-3">
+                <img
+                  src="images/recipes/creamy-bread-rasmalai.png"
+                  alt="Creamy Bread Rasmalai"
+                  class="w-100"
+                />
+              </div>
+              <figcaption class="text-center">
+                <h6>Creamy Bread Rasmalai</h6>
+                <button class="btn btn-success product-btn text-white">
+                  Get Recipe
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Recipe Card 28 -->
+          <div class="col-md-4 col-sm-6">
+            <figure class="product rounded">
+              <div class="product-image p-3">
+                <img
+                  src="images/recipes/shahi-tukda-and-rabdi.png"
+                  alt="Shahi Tukda and Rabdi"
+                  class="w-100"
+                />
+              </div>
+              <figcaption class="text-center">
+                <h6>Shahi Tukda and Rabdi</h6>
+                <button class="btn btn-success product-btn text-white">
+                  Get Recipe
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Recipe Card 29 -->
+          <div class="col-md-4 col-sm-6">
+            <figure class="product rounded">
+              <div class="product-image p-3">
+                <img
+                  src="images/recipes/palada-payasam.png"
+                  alt="Palada Payasam"
+                  class="w-100"
+                />
+              </div>
+              <figcaption class="text-center">
+                <h6>Palada Payasam</h6>
+                <button class="btn btn-success product-btn text-white">
+                  Get Recipe
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Recipe Card 30 -->
+          <div class="col-md-4 col-sm-6">
+            <figure class="product rounded">
+              <div class="product-image p-3">
+                <img
+                  src="images/recipes/gulkand-coconut-modak.png"
+                  alt="Gulkand Coconut Modak"
+                  class="w-100"
+                />
+              </div>
+              <figcaption class="text-center">
+                <h6>Gulkand Coconut Modak</h6>
+                <button class="btn btn-success product-btn text-white">
+                  Get Recipe
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Recipe Card 31 -->
+          <div class="col-md-4 col-sm-6">
+            <figure class="product rounded">
+              <div class="product-image p-3">
+                <img
+                  src="images/recipes/chocolate-pudding.png"
+                  alt="Chocolate Pudding"
+                  class="w-100"
+                />
+              </div>
+              <figcaption class="text-center">
+                <h6>Chocolate Pudding</h6>
+                <button class="btn btn-success product-btn text-white">
+                  Get Recipe
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Recipe Card 32 -->
+          <div class="col-md-4 col-sm-6">
+            <figure class="product rounded">
+              <div class="product-image p-3">
+                <img
+                  src="images/recipes/mango-float.png"
+                  alt="Mango Float"
+                  class="w-100"
+                />
+              </div>
+              <figcaption class="text-center">
+                <h6>Mango Float</h6>
+                <button class="btn btn-success product-btn text-white">
+                  Get Recipe
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Recipe Card 33 -->
+          <div class="col-md-4 col-sm-6">
+            <figure class="product rounded">
+              <div class="product-image p-3">
+                <img
+                  src="images/recipes/japanese-fruit-sando.png"
+                  alt="Japanese Fruit Sando"
+                  class="w-100"
+                />
+              </div>
+              <figcaption class="text-center">
+                <h6>Japanese Fruit Sando</h6>
+                <button class="btn btn-success product-btn text-white">
+                  Get Recipe
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Recipe Card 34 -->
+          <div class="col-md-4 col-sm-6">
+            <figure class="product rounded">
+              <div class="product-image p-3">
+                <img
+                  src="images/recipes/mango-custard-drink.png"
+                  alt="Mango Custard Drink"
+                  class="w-100"
+                />
+              </div>
+              <figcaption class="text-center">
+                <h6>Mango Custard Drink</h6>
+                <button class="btn btn-success product-btn text-white">
+                  Get Recipe
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+      </div>
+    </section>
+
+    <!-- Promotional Section -->
+    <section class="py-5" style="background-color: #f5f5dc">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="bg-white rounded-4 shadow-sm p-5 text-center">
+              <h2
+                class="mb-4"
+                style="font-weight: 700; color: #2c3e2c; font-size: 2rem"
+              >
+                Creamy dreams with Naturals' Ice Cream!
+              </h2>
+              <p
+                class="mb-4"
+                style="color: #555; font-size: 1rem; line-height: 1.8"
+              >
+                Welcome to the ultimate flavour expedition brought to you by
+                Naturals Ice Cream. We're diving headfirst into a world of
+                creamy indulgence with our beloved Malai Ice Cream, and boy, are
+                we in for a treat. From classic desserts to innovative twists,
+                buckle up as we explore a mouthwatering lineup of recipes using
+                our Malai Ice Cream that'll have your taste buds dancing with
+                joy.
+              </p>
+              <a
+                href="#"
+                class="btn btn-success px-5 py-3"
+                style="
+                  background-color: #00a651;
+                  border: none;
+                  font-weight: 600;
+                  border-radius: 8px;
+                "
+              >
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer py-5 bg-dark text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="footer-title">CONTACT US</h5>
+            <p class="footer-text">
+              Plot 55 ABCD & 56 D, Kandivali Industrial Estate, Charkop,
+              Kandivali (W), Mumbai – 400 067.
+            </p>
+            <p class="footer-text">
+              <i class="bi bi-envelope me-2"></i
+              >customercare@naturalicecreams.in
+            </p>
+            <p class="footer-text">
+              <i class="bi bi-telephone me-2"></i>8080801984
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="footer-title">ABOUT NATURALS</h5>
+            <ul class="footer-links list-unstyled">
+              <li><a href="#">Tree To Treat</a></li>
+              <li><a href="#">Our Legacy</a></li>
+              <li><a href="#">Franchise Queries</a></li>
+            </ul>
+            <h5 class="footer-title mt-4">FRANCHISE QUERIES</h5>
+            <ul class="footer-links list-unstyled">
+              <li><a href="#">Become a Business Partner</a></li>
+              <li><a href="#">Franchise FAQ</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="footer-title">OTHERS</h5>
+            <ul class="footer-links list-unstyled">
+              <li><a href="#">Artist Collaboration</a></li>
+              <li><a href="#">Store locator</a></li>
+              <li><a href="#">CSR</a></li>
+              <li><a href="#">Legal</a></li>
+              <li><a href="#">Nutritional Info</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blogs</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="footer-title">SHOP</h5>
+            <ul class="footer-links list-unstyled">
+              <li><a href="#">Round The Year</a></li>
+              <li><a href="#">Festive Special</a></li>
+              <li><a href="#">Seasonal</a></li>
+              <li><a href="#">No Added Sugar</a></li>
+              <li><a href="#">Berry Festival</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <div class="row align-items-center">
+          <div class="col-md-12 text-center">
+            <div class="social-icons">
+              <a href="#" class="social-icon"><i class="bi bi-whatsapp"></i></a>
+              <a href="#" class="social-icon"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+              <a href="#" class="social-icon"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <button
+      id="scrollTopBtn"
+      class="btn btn-success rounded-circle position-fixed bottom-0 end-0 m-4"
+      style="width: 50px; height: 50px; display: none"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
